@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -7,9 +13,13 @@ nav ul{
     display: flex;
     list-style: none;
     align-items: center;
+     padding-left: 0;
+    margin: 0;
 }
 nav ul li{
     margin: 0 10px;
+    list-style: none;
+   
     color:rgba(0, 0, 0, 0.781)
 }
 .nav-btn button{
@@ -41,11 +51,244 @@ nav ul li{
     line-height: 1.6;
     margin-bottom: 30px;
 }
-.banner-btn button{
+.banner-btn Button{
     background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 5px;
+}
+
+
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:70px auto;
+}
+
+h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    font-weight:700;
+    color:#111827;
+}
+
+.speaker-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
+}
+
+.content{
+    padding:18px;
+}
+
+.category{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.content h3{
+    font-size:22px;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.content p{
+    color:#111827;
+    font-size:15px;
+}
+
+
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.pricing-section{
+    padding:80px 0;
+}
+
+.pricing-section h2{
+    text-align:center;
+    font-size:54px;
+    color:#172334;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:50px;
+    font-size:18px;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:28px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.active{
+    background:#0f1d2d;
+    color:#fff;
+}
+
+.plan{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#8a8a8a;
+}
+
+.active .plan{
+    color:#66a3ff;
+}
+
+.card h3{
+    font-size:56px;
+    margin-top:10px;
+}
+
+.price-text{
+    color:#888;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+.active .price-text{
+    color:#b6c2d1;
+}
+
+hr{
+    border:none;
+    border-top:1px solid rgba(0,0,0,.12);
+    margin:22px 0;
+}
+
+.active hr{
+    border-color:rgba(255,255,255,.15);
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin-bottom:18px;
+    position:relative;
+    padding-left:18px;
+    color:#444;
+    font-size:15px;
+}
+
+.active li{
+    color:#ddd;
+}
+
+.fullstop ul li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:#2563eb;
+    font-size:18px;
+}
+
+.card button{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.card button:hover{
+    opacity:.9;
+}
+
+.card:not(.active) button{
+    background:#fff;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.outline{
+    color:#222;
+    border:2px solid #444
+}
+
+.outline:hover{
+    background:#222;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    h2{
+        font-size:32px;
+    }
+
+    .speaker-grid{
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:220px;
+    }
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pricing-section h2{
+        font-size:40px;
+    }
+
 }
