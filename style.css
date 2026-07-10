@@ -268,6 +268,74 @@ ul li{
     color:#fff;
 }
 
+
+
+
+.footer {
+    width: 100%;
+    background-color: #0f1d2d;
+    padding: 70px 0 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+     background-color: #0f1d2d;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.footer-logo img {
+    width: 70px;
+    color: #fff;
+    display:flex;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    background: #f3f3f3;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #ff5722;
+    color: #fff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 30px 0;
+}
+
+.copyright {
+    /* text-align: center; */
+    color: #ccc;
+    font-size: 16px;
+    justify-content: space-between;
+    margin: 20px;
+    display: flex;
+}
+
 /* Responsive */
 
 @media (max-width:768px){
@@ -289,6 +357,10 @@ ul li{
 
     .pricing-section h2{
         font-size:40px;
+    }
+     .footer-top {
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
