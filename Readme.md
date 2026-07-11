@@ -4,11 +4,11 @@ A modern and responsive landing page for **DEV CONFERENCE**, built using only **
 
 ## 🌐 Live Website
 
-🔗 https://devconf-2026.vercel.app
+🔗 https://dev-conference-project.vercel.app
 
 ## 💻 GitHub Repository
 
-🔗 https://github.com/tishadey45/devconf-2026
+🔗 https://github.com/tishadey45/dev-conference
 
 ---
 
